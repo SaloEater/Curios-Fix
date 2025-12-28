@@ -82,12 +82,26 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
+    maven {
+        url "https://maven.architectury.dev/"
+    }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    implementation fg.deobf("curse.maven:curiosapi-309927:6418456")
+
+    runtimeOnly fg.deobf("dev.architectury:architectury-forge:9.2.14")
+    runtimeOnly fg.deobf("curse.maven:cael-308989:5281700")
+    runtimeOnly fg.deobf("curse.maven:gl-388172:7025129")
+    runtimeOnly fg.deobf("curse.maven:terramity-1084134:6054971")
+    runtimeOnly fg.deobf("curse.maven:relics-445274:6976293")
+    runtimeOnly fg.deobf("curse.maven:octolib-916747:6274623")
+    runtimeOnly fg.deobf("curse.maven:enigmaticaddons-1030121:7085566")
+    runtimeOnly fg.deobf("curse.maven:enigmaticlegacy-336184:5600004")
+    runtimeOnly fg.deobf("curse.maven:patchouli-306770:6164575")
 }
 
 
@@ -100,7 +114,7 @@ def replaceProperties = [
         forge_version: forge_version, forge_version_range: forge_version_range,
         loader_version_range: loader_version_range,
         mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
-        mod_authors: mod_authors, mod_description: mod_description,
+        mod_authors: mod_authors, mod_description: mod_description, curios_version_range: curios_version_range
 ]
 processResources {
     inputs.properties replaceProperties

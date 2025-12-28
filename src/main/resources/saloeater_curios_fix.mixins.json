@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.7",
+  "package": "com.saloeater.curios_fix.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "saloeater_curios_fix.refmap.json",
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "CuriosEventHandlerMixin",
+    "CurioStacksHandlerAccessor"
+  ]
+}
