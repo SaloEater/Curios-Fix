@@ -92,7 +92,9 @@ dependencies {
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     implementation fg.deobf("curse.maven:curiosapi-309927:6418456")
+    implementation fg.deobf("curse.maven:enigmaticlegacy-336184:5600004")
 
+//    runtimeOnly files("libs/covenant_of_the_seven-2.0.1.jar")
     runtimeOnly fg.deobf("dev.architectury:architectury-forge:9.2.14")
     runtimeOnly fg.deobf("curse.maven:cael-308989:5281700")
     runtimeOnly fg.deobf("curse.maven:gl-388172:7025129")
@@ -100,7 +102,6 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:relics-445274:6976293")
     runtimeOnly fg.deobf("curse.maven:octolib-916747:6274623")
     runtimeOnly fg.deobf("curse.maven:enigmaticaddons-1030121:7085566")
-    runtimeOnly fg.deobf("curse.maven:enigmaticlegacy-336184:5600004")
     runtimeOnly fg.deobf("curse.maven:patchouli-306770:6164575")
 }
 
