@@ -12,6 +12,7 @@
   "mixins": [
     "CuriosEventHandlerMixin",
     "CuriosImplMixinHooksMixin",
-    "CurioStacksHandlerAccessor"
+    "CurioStacksHandlerAccessor",
+    "SlotAttributeMixin"
   ]
 }
